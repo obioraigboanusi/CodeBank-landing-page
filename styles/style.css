@@ -18,7 +18,7 @@ ul li{
 nav{
   display: grid;
   grid-template-columns: auto 0.7fr;
-  background: #FCC0C0;
+  background: transparent;
 }
 
 .navlinkArea{
@@ -29,7 +29,6 @@ nav{
   justify-content: end;
   grid-gap: 30px;
   padding: 20px 80px 20px 30px;
-  background: #0444C0;
   border-radius: 0 0 0 40px;
 }
 
@@ -128,6 +127,7 @@ nav{
     border-radius: 0;
     padding-bottom: 40px;
     padding-left: 50px;
+    background: #0444C0;
   }
 
   .navBtn{
