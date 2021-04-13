@@ -14,18 +14,29 @@ ul li{
   list-style: none;
 }
 
+/* Styles for navbar */
 nav{
   display: grid;
-  grid-template-columns: repeat(2, 50%);
-  padding: 20px 80px;
-  background: #0444C0;
+  grid-template-columns: auto 0.7fr;
+  background: #FCC0C0;
 }
 
 .navlinkArea{
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(5, auto);
-  place-items: center;
-  grid-gap: 20px;
+  align-items: center;
+  justify-content: end;
+  grid-gap: 30px;
+  padding: 20px 80px 20px 30px;
+  background: #0444C0;
+  border-radius: 0 0 0 40px;
+}
+
+.logoArea{
+  display: grid;
+  align-items: center;
+  padding: 20px 0 20px 80px;
 }
 
 .navBtn{
@@ -42,11 +53,75 @@ nav{
   font-size: 1.5rem;
   font-weight: 700;
   color: #0444C0;
-  color: #ffffff;
 }
 
 .navlinkArea a{
   font-size: 1rem;
   font-weight: 700;
   color: #ffffff;
+}
+
+/* Mobile esponsiveness for navbar */
+@media screen and (max-width: 1160px) {
+  nav{
+    grid-template-columns: 0.9fr auto;
+  }
+
+  .navlinkArea{
+    padding: 20px 50px 20px 30px;
+  }
+  
+  .logoArea{
+    padding: 20px 0 20px 50px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  nav{
+    position: relative;
+    grid-template-columns: 0.7fr 1fr;
+  }
+
+  .navlinkArea{
+    display: none;
+    position: absolute;
+    top: 70px;
+    z-index: 1;
+  }
+
+  .hamburgerArea{
+    display: block;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: end;
+    padding: 20px 40px 20px 0;
+  }
+
+  .showNavLinks{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    border-radius: 0;
+    padding-bottom: 40px;
+    padding-left: 50px;
+  }
+
+  .navBtn{
+    border-radius: 0px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .logoArea{
+    padding: 10px 0 10px 20px;
+  }
+
+  .hamburgerArea{
+    padding: 10px 0px 10px 0;
+  }
+
+  .showNavLinks{
+    padding-left: 20px;
+  }
 }

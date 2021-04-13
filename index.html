@@ -6,22 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CodeBank | Home of usefull code snippets</title>
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/hamburger.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Navbar section -->
   <nav>
     <div class="logoArea">
       <a href="index.html">CodeBank</a>
     </div>
 
-    <div class="navlinkArea">
-      <a href="#">How It Works</a>
-      <a href="#">Blog</a>
-      <a href="#">Installations</a>
-      <a href="#">Resources</a>
-      <a class="navBtn" href="#">Sign Up</a>
-    </div>
+    <ul class="navlinkArea" id="navLinkContainer">
+      <li>
+        <a href="#">How It Works</a>
+      </li>
+      <li>
+        <a href="#">Blog</a>
+      </li>
+      <li>
+        <a href="#">Installations</a>
+      </li>
+      <li>
+        <a href="#">Resources</a>
+      </li>
+      <li>
+        <a class="navBtn" href="#">Sign Up</a>
+      </li>
+    </ul>
 
     <div class="hamburgerArea">
       <button id="btn" class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
