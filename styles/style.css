@@ -78,7 +78,7 @@ nav{
   border-radius: 0;
 }
 
-/* Mobile esponsiveness for the navbar section */
+/* Mobile responsiveness for the navbar section */
 @media screen and (max-width: 1160px) {
   nav{
     grid-template-columns: 0.9fr auto;
