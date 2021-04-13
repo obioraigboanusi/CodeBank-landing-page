@@ -63,6 +63,12 @@ nav{
   transition: 0.25s ease-in-out;
 }
 
+.sticky{
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
 /* Hover effects for the navbar section */
 .logoArea a:hover{
   color: rgb(4, 68, 192, 0.7);
