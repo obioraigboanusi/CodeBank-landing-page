@@ -3,49 +3,28 @@
   margin: 0;
   padding: 0;
 }
+
 body{
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
 }
+
 a{
   text-decoration: none;
 }
+
 ul li{
   list-style: none;
 }
-
+/* --------------------------------------------------- */
 /* Styles for the navbar section */
 nav{
+  position: relative;
   display: grid;
-  grid-template-columns: auto 0.7fr;
+  grid-template-columns: 0.7fr 1fr;
+  align-items: center;
+  padding: 10px 10px 0 20px;
   background: transparent;
-}
-
-.navlinkArea{
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-  align-items: center;
-  justify-content: end;
-  grid-gap: 30px;
-  padding: 20px 80px 20px 30px;
-  border-radius: 0 0 0 40px;
-}
-
-.logoArea{
-  display: grid;
-  align-items: center;
-  padding: 20px 0 20px 80px;
-}
-
-.navBtn{
-  padding: 10px 30px;
-  background: #E45050;
-  border-radius: 10px;
-}
-
-.hamburgerArea{
-  display: none;
 }
 
 .logoArea a{
@@ -55,11 +34,39 @@ nav{
   transition: 0.25s ease-in-out;
 }
 
+.hamburgerArea{
+  width: 100%;
+  display: grid;
+  justify-content: end;
+}
+
+.navlinkArea{
+  width: 100%;
+  display: none;
+  position: absolute;
+  top: 70px;
+  z-index: 1;
+}
+
+.showNavLinks{
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  grid-gap: 25px;
+  padding: 30px 20px;
+  background: #0444C0;
+}
+
 .navlinkArea a{
   font-size: 1rem;
   font-weight: 700;
   color: #ffffff;
   transition: 0.25s ease-in-out;
+}
+
+.navBtn{
+  padding: 10px 30px;
+  background: #E45050;
+  border-radius: 5px;
 }
 
 .sticky{
@@ -80,71 +87,41 @@ nav{
 .navBtn:hover{
   color: #fff!important;
   background: rgb(240, 101, 101);
-  /* border-radius: 0; */
 }
 
 /* Mobile responsiveness for the navbar section */
-@media screen and (max-width: 1160px) {
+@media screen and (min-width: 920px) {
   nav{
-    grid-template-columns: 0.9fr auto;
+    padding: 15px 30px 15px 30px;
   }
 
-  .navlinkArea{
-    padding: 20px 50px 20px 30px;
-  }
-  
-  .logoArea{
-    padding: 20px 0 20px 50px;
-  }
-}
-
-@media screen and (max-width: 960px) {
-  nav{
-    position: relative;
-    grid-template-columns: 0.7fr 1fr;
+  .logoArea a{
+    font-size: 2rem;
   }
 
-  .navlinkArea{
-    display: none;
-    position: absolute;
-    top: 70px;
-    z-index: 1;
+  .navlinkArea a{
+    font-size: 1rem;
   }
 
   .hamburgerArea{
-    display: block;
-    width: 100%;
+    display: none;
+  }
+
+  .navlinkArea{
     display: grid;
+    position: relative;
+    top: auto;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: 1fr;
     align-items: center;
     justify-content: end;
-    padding: 20px 40px 20px 0;
-  }
-
-  .showNavLinks{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, auto);
-    border-radius: 0;
-    padding-bottom: 40px;
-    padding-left: 50px;
-    background: #0444C0;
-  }
-
-  .navBtn{
-    border-radius: 0px;
+    grid-gap: 20px;
   }
 }
 
-@media screen and (max-width:600px) {
-  .logoArea{
-    padding: 10px 0 10px 20px;
-  }
-
-  .hamburgerArea{
-    padding: 10px 0px 10px 0;
-  }
-
-  .showNavLinks{
-    padding-left: 20px;
+@media screen and (min-width: 1224px) {
+  nav{
+    padding: 15px 8% 15px 8%;
   }
 }
+/* --------------------------------------------------- */
