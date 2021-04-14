@@ -13,3 +13,138 @@ a{
 ul li{
   list-style: none;
 }
+
+/* Styles for the navbar section */
+nav{
+  display: grid;
+  grid-template-columns: auto 0.7fr;
+  background: transparent;
+}
+
+.navlinkArea{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  align-items: center;
+  justify-content: end;
+  grid-gap: 30px;
+  padding: 20px 80px 20px 30px;
+  border-radius: 0 0 0 40px;
+}
+
+.logoArea{
+  display: grid;
+  align-items: center;
+  padding: 20px 0 20px 80px;
+}
+
+.navBtn{
+  padding: 10px 30px;
+  background: #E45050;
+  border-radius: 10px;
+}
+
+.hamburgerArea{
+  display: none;
+}
+
+.logoArea a{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0444C0;
+  transition: 0.25s ease-in-out;
+}
+
+.navlinkArea a{
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  transition: 0.25s ease-in-out;
+}
+
+.sticky{
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+/* Hover effects for the navbar section */
+.logoArea a:hover{
+  color: rgb(4, 68, 192, 0.7);
+}
+
+.navlinkArea a:hover{
+  color: #E45050;
+}
+
+.navBtn:hover{
+  color: #fff!important;
+  background: rgb(240, 101, 101);
+  border-radius: 0;
+}
+
+/* Mobile responsiveness for the navbar section */
+@media screen and (max-width: 1160px) {
+  nav{
+    grid-template-columns: 0.9fr auto;
+  }
+
+  .navlinkArea{
+    padding: 20px 50px 20px 30px;
+  }
+  
+  .logoArea{
+    padding: 20px 0 20px 50px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  nav{
+    position: relative;
+    grid-template-columns: 0.7fr 1fr;
+  }
+
+  .navlinkArea{
+    display: none;
+    position: absolute;
+    top: 70px;
+    z-index: 1;
+  }
+
+  .hamburgerArea{
+    display: block;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: end;
+    padding: 20px 40px 20px 0;
+  }
+
+  .showNavLinks{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    border-radius: 0;
+    padding-bottom: 40px;
+    padding-left: 50px;
+    background: #0444C0;
+  }
+
+  .navBtn{
+    border-radius: 0px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .logoArea{
+    padding: 10px 0 10px 20px;
+  }
+
+  .hamburgerArea{
+    padding: 10px 0px 10px 0;
+  }
+
+  .showNavLinks{
+    padding-left: 20px;
+  }
+}
