@@ -80,7 +80,7 @@ nav{
 .navBtn:hover{
   color: #fff!important;
   background: rgb(240, 101, 101);
-  border-radius: 0;
+  /* border-radius: 0; */
 }
 
 /* Mobile responsiveness for the navbar section */
