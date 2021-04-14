@@ -13,3 +13,43 @@ a{
 ul li{
   list-style: none;
 }
+/* Section bellow developer Hiring hand*/
+.container {
+  position: absolute;
+  width: 100%;
+
+  grid-template-rows: 1fr 1fr;
+  grid-template-column: 1fr 1fr;
+}
+.box1 {
+  background: #e6eefe;
+  width: 50%;
+  justify-self: center;
+  padding: auto;
+}
+.box2 {
+  width: 50%;
+  background: #fff7f7;
+  justify-self: center;
+  width: relative;
+  padding: auto;
+}
+/*Button*/
+.btn {
+  display: inline-block;
+  padding: 1em 1em;
+  background: #e45050;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+#btn1 {
+  background: #e45050;
+}
+#btn2 {
+  background: #0444c0;
+}
+h3 {
+  display: block;
+}
