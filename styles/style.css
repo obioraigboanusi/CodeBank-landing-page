@@ -16,6 +16,7 @@ a{
 ul li{
   list-style: none;
 }
+
 /* --------------------------------------------------- */
 /* Styles for the navbar section */
 nav{
@@ -125,7 +126,76 @@ nav{
   }
 }
 /* --------------------------------------------------- */
+/* hero-section */
+.hero{
+  position: absolute;
+width: 1438px;
+height: 452px;
+left: -3px;
+top: 148px;
+}
+.hero h2{
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 56px;
+letter-spacing: 0em;
+text-align: left;
+position: absolute;
+width: 649.1px;
+height: 168px;
+left: 96.86px;
+top: 182px;
 
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 56px;
+display: flex;
+align-items: center;
+
+color: #000000;
+}
+.hero p{
+  position: absolute;
+width: 649.1px;
+height: 50px;
+left: 96.86px;
+top: 364px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+
+color: #000000;
+}
+#btn1{
+  position: absolute;
+width: 199.72px;
+height: 66px;
+left: 96.86px;
+top: 431px;
+
+background: #0444C0;
+color:#fff;
+
+}
+
+#btn2{
+  position: absolute;
+width: 199.72px;
+height: 66px;
+left: 336.53px;
+top: 431px;
+
+background: #FFFFFF;
+color:#0444C0;
+}
 /* --------------------------------------------------- */
 /* Styles for the four card section */
 .four-card-section{
@@ -196,3 +266,4 @@ nav{
   }
 }
 /* --------------------------------------------------- */
+
