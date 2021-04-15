@@ -1,55 +1,61 @@
-*, *::after, *::before{
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-body{
+body {
   font-size: 18px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-a{
+a {
   text-decoration: none;
 }
-ul li{
+ul li {
   list-style: none;
 }
 /* Section bellow developer Hiring hand*/
-.container {
-  position: absolute;
-  width: 100%;
-
-  grid-template-rows: 1fr 1fr;
-  grid-template-column: 1fr 1fr;
+.wrapper {
+  display: flex;
+  height: 477px;
+  box-sizing: border-box;
+  justify-self: center;
 }
-.box1 {
+.LeftBox {
   background: #e6eefe;
-  width: 50%;
-  justify-self: center;
-  padding: auto;
 }
-.box2 {
-  width: 50%;
+#rightBox {
+  flex-grow: 1fr;
   background: #fff7f7;
-  justify-self: center;
-  width: relative;
-  padding: auto;
+}
+h3 {
+  font-size: 36px;
+  line-height: 42px;
+  align-items: center;
+  text-align: center;
 }
 /*Button*/
 .btn {
-  display: inline-block;
   padding: 1em 1em;
   background: #e45050;
-  text-decoration: none;
   cursor: pointer;
   font-size: 0.8rem;
   letter-spacing: 2px;
+  width: 195.65px;
+  height: 66px;
+  color: white;
 }
 #btn1 {
   background: #e45050;
+  margin-left: 35%;
 }
 #btn2 {
   background: #0444c0;
+  margin-left: 35%;
 }
-h3 {
-  display: block;
+.loremP {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
 }
