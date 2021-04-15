@@ -1,16 +1,15 @@
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
-body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
   font-size: 18px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-
 a{
   text-decoration: none;
 }
@@ -148,9 +147,6 @@ width: 649.1px;
 height: 168px;
 left: 96.86px;
 top: 182px;
-
-font-family: Roboto;
-font-style: normal;
 font-weight: bold;
 font-size: 48px;
 line-height: 56px;
@@ -165,10 +161,6 @@ width: 649.1px;
 height: 50px;
 left: 96.86px;
 top: 364px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
 font-size: 18px;
 line-height: 21px;
 display: flex;
@@ -421,4 +413,49 @@ ul li {
     .footer-col {
         width: 100%;
     }
+
 }
+
+/* Section bellow developer Hiring hand*/
+.wrapper {
+  display: flex;
+  height: 477px;
+  box-sizing: border-box;
+  justify-self: center;
+}
+.LeftBox {
+  background: #e6eefe;
+}
+#rightBox {
+  flex-grow: 1fr;
+  background: #fff7f7;
+}
+h3 {
+  font-size: 36px;
+  line-height: 42px;
+  align-items: center;
+  text-align: center;
+}
+/*Button*/
+.btn {
+  padding: 1em 1em;
+  background: #e45050;
+  cursor: pointer;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  width: 195.65px;
+  height: 66px;
+  color: white;
+}
+#btn1 {
+  background: #e45050;
+  margin-left: 35%;
+}
+#btn2 {
+  background: #0444c0;
+  margin-left: 35%;
+}
+.loremP {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;}
