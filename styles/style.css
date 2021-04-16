@@ -473,7 +473,6 @@ ul li {
   height: 477px;
   box-sizing: border-box;
   justify-self: center;
-  flex-direction: row;
 }
 .LeftBox {
   background: #e6eefe;
@@ -482,12 +481,8 @@ ul li {
   flex-grow: 1fr;
   background: #fff7f7;
 }
-.LeftBox,
-.RightBox {
-  text-align: center;
-}
 h3 {
-  font-size: 36.1px;
+  font-size: 36px;
   line-height: 42px;
   align-items: center;
   text-align: center;
@@ -499,13 +494,13 @@ h3 {
   cursor: pointer;
   font-size: 0.8rem;
   letter-spacing: 2px;
-  color: white;
   width: 195.65px;
   height: 66px;
+  color: white;
 }
 #btn1 {
   background: #e45050;
-  margin: auto;
+  margin-left: 35%;
 }
 #btn2 {
   background: #0444c0;
