@@ -148,10 +148,11 @@ nav {
 }
 .helping-hands .wrapper{
 display: flex;
+flex-direction: column-reverse;
 justify-content: space-between;
 }
 .helping-hands .wrapper>div{
-flex-basis: 48%;
+margin-bottom: 2rem;
 }
 .helping-hands h2 {
   color: #e45050;
@@ -163,7 +164,7 @@ flex-basis: 48%;
 
 .helping-hands .button {
   color: white;
-  width: 40%;
+  width: 45%;
   max-width: 200px;
   
 }
@@ -447,6 +448,14 @@ h3 {
   .wrapper{
     padding: 100px 10%;
   }
+  .helping-hands .wrapper{
+    flex-direction: row;
+    justify-content: space-between;
+    }
+    .helping-hands .wrapper>div{
+    flex-basis: 48%;
+    margin-bottom: 0;
+    }
 }
 
 @media screen and (min-width: 920px) {
