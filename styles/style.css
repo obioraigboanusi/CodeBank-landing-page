@@ -102,6 +102,22 @@ nav {
   background: rgb(240, 101, 101);
 }
 
+/* Tech stacks section */
+.tech-stacks{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, 1fr);
+  place-items: center;
+}
+
+/* Responsiveness for the Tech stacks section */
+@media screen and (min-width: 768px) {
+  .tech-stacks{
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: 1fr;
+  }
+}
+
 /* hero-section */
 
 .hero {
