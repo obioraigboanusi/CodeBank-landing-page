@@ -17,6 +17,8 @@ a {
 button {
   outline: none;
   border: none;
+  font-weight: bold;
+  padding: 1rem 2rem;
 }
 
 ul li {
@@ -100,39 +102,6 @@ nav {
   background: rgb(240, 101, 101);
 }
 
-/* Mobile responsiveness for the navbar section */
-
-@media screen and (min-width: 920px) {
-  nav {
-    padding: 15px 30px 15px 30px;
-  }
-  .logoArea a {
-    font-size: 2rem;
-  }
-  .navlinkArea a {
-    font-size: 1rem;
-  }
-  .hamburgerArea {
-    display: none;
-  }
-  .navlinkArea {
-    display: grid;
-    position: relative;
-    top: auto;
-    grid-template-columns: repeat(5, auto);
-    grid-template-rows: 1fr;
-    align-items: center;
-    justify-content: end;
-    grid-gap: 20px;
-  }
-}
-
-@media screen and (min-width: 1224px) {
-  nav {
-    padding: 15px 8% 15px 8%;
-  }
-}
-
 /* hero-section */
 
 .hero {
@@ -174,46 +143,48 @@ nav {
 }
 
 /* Helping hands */
-
+.wrapper{
+  padding: 50px 5%;
+}
+.helping-hands .wrapper{
+display: flex;
+justify-content: space-between;
+}
+.helping-hands .wrapper>div{
+flex-basis: 48%;
+}
 .helping-hands h2 {
   color: #e45050;
+  margin-bottom: 1rem;
+}
+.helping-hands p {
+  margin-bottom: 1rem;
 }
 
-.paragraph1 {
-  color: black;
-}
-
-.button {
+.helping-hands .button {
   color: white;
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
-  cursor: pointer;
+  width: 40%;
+  max-width: 200px;
+  
 }
 
-.button1 {
+.helping-hands .button1 {
   background-color: #e45050;
   border-color: white;
+  margin-right: 1rem;
 }
 
-.button2 {
+.helping-hands .button2 {
   color: blue;
   background-color: white;
-  border-color: blue;
+  border: 1px solid blue;
 }
 
-.content {
+.helping-hands .content {
   display: flex;
+  flex-direction: column;
 }
 
-.picture1 {
-  float: right;
-}
-
-.paragraph1 {
-  float: left;
-  margin-left: 100px;
-}
 
 /* Styles for the four card section */
 
@@ -330,7 +301,7 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 15px;
+  /* margin: 15px; */
 }
 
 .btn-btn1 {
@@ -419,13 +390,6 @@ nav {
 
 /* Section bellow developer Hiring hand*/
 
-.wrapper {
-  display: flex;
-  height: 477px;
-  box-sizing: border-box;
-  justify-self: center;
-}
-
 .LeftBox {
   background: #e6eefe;
 }
@@ -478,8 +442,40 @@ h3 {
     width: 60%;
   }
   .hero h1 {
-    
     font-size: 3rem;
-  
+  }
+  .wrapper{
+    padding: 100px 10%;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  nav {
+    padding: 15px 30px 15px 30px;
+  }
+  .logoArea a {
+    font-size: 2rem;
+  }
+  .navlinkArea a {
+    font-size: 1rem;
+  }
+  .hamburgerArea {
+    display: none;
+  }
+  .navlinkArea {
+    display: grid;
+    position: relative;
+    top: auto;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: end;
+    grid-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  nav {
+    padding: 15px 8% 15px 8%;
   }
 }
