@@ -143,13 +143,13 @@ nav {
   margin-bottom: 1rem;
 }
 
-.btn1 {
+.hero-inner .btn1 {
   background: #0444C0;
   color: #fff;
   margin-right: 1rem;
 }
 
-.btn2 {
+.hero-inner .btn2 {
   background: #FFFFFF;
   color: #0444C0;
 }
@@ -297,104 +297,97 @@ nav {
 }
 
 .footer {
-  padding: 70px 0;
+  padding-top: 20px;
 }
 
 .footer-content {
-  display: flex;
-  flex-direction: column;
-  background: pink;
+  padding: 1rem 0;
+  background: #fff7f7;
 }
 
-.footer-content h3 {
-  font-size: 1.8rem;
+.footer-content h2 {
+  font-size: 1.5rem;
   color: #000000;
-  text-transform: capitalize;
-  font-weight: 500;
-  line-height: 3rem;
-  justify-content: center;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.footer-content .button {
   text-align: center;
 }
 
-.footer-content p {
-  max-width: 500px;
-  margin: 10px auto;
-  line-height: 28px;
-  font-size: 14px;
-}
-
-.button {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  /* margin: 15px; */
+.button button{
+  width: 80%;
+  font-size: 1rem;
+  color: #fff;
 }
 
 .btn-btn1 {
-  padding: 10px;
+  margin-bottom: 15px;
   background-color: blue;
-  color: #000000;
 }
 
 .btn-btn2 {
-  padding: 10px;
   background-color: #ff0000;
-  color: #000000;
 }
 
-.footer-col {
-  width: 20%;
-  padding: 0 15px;
+footer .container .row{
+  display: grid;
+  grid-template-rows: repeat(5, auto);
 }
 
 .footer-col #Title {
+  font-size: 1.5rem;
+  font-weight: 700;
   color: #ff0000;
 }
 
+/* .footer-col {
+  width: 20%;
+  padding: 0 15px;
+} */
+
 .footer-col h4 {
-  font-size: 18px;
+  font-size: 1.2rem;
   color: #ffffff;
-  text-transform: capitalize;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   font-weight: 500;
 }
 
-.footer-col h4::before {
+/* .footer-col h4::before {
   content: '';
   background-color: #ffffff;
   height: 2px;
   box-sizing: border-box;
   width: 50px;
-}
+} */
 
-.footer-col ul li:not(:last-child) {
+/* .footer-col ul li:not(:last-child) {
   margin-bottom: 10px;
-}
+} */
 
 .footer-col ul li a {
-  text-transform: capitalize;
   color: #ffffff;
-  font-weight: 300;
+  font-size: 1rem;
+  font-weight: 400;
   color: #bbbbbb;
-  display: block;
-  transform: all 0.3s ease;
+  /* display: block; */
 }
 
 .footer-col ul li a:hover {
   color: #ffffff;
-  padding-left: 9px;
+  /* padding-left: 9px; */
 }
 
 .footer-bottom {
   background: #000000;
-  width: 100vw;
+  /* width: 100vw; */
   padding: 20px 0;
   text-align: center;
 }
 
 .footer-bottom p {
-  font-size: 15px;
-  word-spacing: 2px;
-  text-transform: capitalize;
+  font-size: 1rem;
   color: #ffffff;
 }
