@@ -1,148 +1,167 @@
-/* Responsiveness for the Tech stacks section */
 @media screen and (min-width: 768px) {
-    .tech-stacks{
-      grid-template-columns: repeat(5, auto);
-      grid-template-rows: 1fr;
-    }
+  /* Hero section */
+  .hero-inner {
+    width: 55%;
+  }
+  
+  /* Tech stacks section */
+  .tech-stacks{
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: 1fr;
+  }
+
+  /* Helping hands */
+  .helping-hands .wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
+  .picture1{
+    display: block;
+  }
+
+  /* Section below developer helping hand section*/
+  .lorem-ipsum .wrapper{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+  }
+
+  /* Four card section */
+  .four-card-section {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px 40px;
+  }
+  .card {
+    grid-gap: 20px;
+    padding: 40px 20px;
+    background: #ffffff;
+  }
+
+  /* Footer section */
+  .button button{
+    width: 35%;
+  }
+
+  .btn-btn1 {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+
+  footer .container .row{
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: 1fr;
+    padding: 2rem 1rem;
+  }
 }
 
-/* Responsiveness for hero section */
-@media screen and (min-width: 768px) {
-    .hero-inner {
-      width: 60%;
-    }
+@media screen and (min-width: 920px) {
+  nav {
+    padding: 15px 30px 15px 30px;
+  }
+  .logoArea a {
+    font-size: 2rem;
+  }
+  .navlinkArea a {
+    font-size: 1rem;
+  }
+  .hamburgerArea {
+    display: none;
+  }
+  .navlinkArea {
+    display: grid;
+    position: relative;
+    top: auto;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: end;
+    grid-gap: 20px;
+  }
+
+  /* Four card section */
+  .card {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .card h3 {
+      font-size: 1.4rem;
+  }
 }
-  
+
 @media screen and (min-width: 1024px) {
-    .hero {
-      padding: 50px 5%;
-    }
-  
-    .hero-inner {
-      width: 56%;
-    }
+  .hero {
+    padding: 50px 5%;
+  }
+
+  .hero-inner {
+    width: 56%;
+  }
+
+  section{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .tech-stacks{
+    margin: 3rem auto;
+  }
+
+  .LeftBox,
+  .rightBox {
+    padding: 3rem 1rem;
+  }
+
+  .button button{
+    width: 25%;
+  }
 }
-  
+
 @media screen and (min-width: 1220px) {
-    .hero-inner {
-      width: 57%;
-    }
-  
-    .hero-inner button {
-      width: 30%;
-    }
-    
-    .hero h1 {
-      width: 80%;
-    }
-    
-    .hero p {
-      margin-bottom: 1rem;
-    }
-}
+  nav {
+    padding: 15px 8% 15px 8%;
+  }
 
-/* Mobile responsiveness for the four card section */
-@media screen and (min-width: 768px) {
-    .four-card-section {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-gap: 20px;
-      padding: 20px 40px;
-    }
-    .card {
-      grid-gap: 20px;
-      padding: 40px 20px;
-      background: #ffffff;
-    }
-}
-  
-@media screen and (min-width: 920px) {
-    .card {
-      grid-template-columns: repeat(2, auto);
-      grid-template-rows: auto;
-      grid-gap: 30px;
-      padding: 40px 20px;
-    }
-  
-    .card h3 {
-        font-size: 1.4rem;
-    }
-}
-  
-@media screen and (min-width: 1224px) {
-    .four-card-section {
-      grid-gap: 50px;
-      padding: 40px 8%;
-    }
-    .card {
-      padding: 60px 50px;
-    }
-}
+  .hero-inner {
+    width: 57%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 
-@media(max-width: 770px) {
-    .footer-col {
-      width: 50%;
-      margin-bottom: 30px;
-    }
-}
+  .hero-inner button {
+    width: 30%;
+  }
   
-@media(max-width: 580px) {
-    .footer-col {
-      width: 100%;
-    }
-}
+  .hero h1 {
+    width: 80%;
+  }
   
-@media screen and (min-width: 800px) {
-    /* .hero {
-      padding: 180px 10% 100px 10%;
-    }
-    
-    .hero-inner {
-      width: 60%;
-    }
-    .hero h1 {
-      font-size: 3rem;
-    }
-    .wrapper{
-      padding: 100px 10%;
-    } */
-    .helping-hands .wrapper{
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    .helping-hands .wrapper>div{
-      flex-basis: 48%;
-      margin-bottom: 0;
-    }
-}
-  
-@media screen and (min-width: 920px) {
-    nav {
-      padding: 15px 30px 15px 30px;
-    }
-    .logoArea a {
-      font-size: 2rem;
-    }
-    .navlinkArea a {
-      font-size: 1rem;
-    }
-    .hamburgerArea {
-      display: none;
-    }
-    .navlinkArea {
-      display: grid;
-      position: relative;
-      top: auto;
-      grid-template-columns: repeat(5, auto);
-      grid-template-rows: 1fr;
-      align-items: center;
-      justify-content: end;
-      grid-gap: 20px;
-    }
-}
-  
-@media screen and (min-width: 1224px) {
-    nav {
-      padding: 15px 8% 15px 8%;
-    }
+  .hero p {
+    margin-bottom: 1rem;
+  }
+
+  section{
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .LeftBox,
+  .rightBox {
+    padding: 4rem 3rem;
+  }
+
+  .four-card-section {
+    grid-gap: 50px;
+    padding: 40px 8%;
+  }
+
+  .card {
+    padding: 60px 50px;
+  }
 }

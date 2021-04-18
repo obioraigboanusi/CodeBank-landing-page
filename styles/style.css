@@ -112,12 +112,13 @@ nav {
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(2, 1fr);
   place-items: center;
+  margin: 1rem;
 }
 
 /* hero-section */
 
 .hero {
-  padding: 50px 5%;
+  padding: 50px 1rem;
 }
 
 .hero-inner {
@@ -156,7 +157,7 @@ nav {
 
 /* Helping hands */
 .wrapper{
-  padding: 50px 5%;
+  padding: 1rem;
 }
 
 .picture1{
@@ -208,17 +209,18 @@ nav {
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 20px;
   place-items: center;
+  margin: 1rem auto;
 }
 
 .LeftBox {
   text-align: center;
-  padding: 3rem 0;
+  padding: 3rem 0.6rem;
   background: #e6eefe;
 }
 
 .rightBox {
   text-align: center;
-  padding: 3rem 0;
+  padding: 3rem 0.6rem;
   background: #fff7f7;
 }
 
@@ -256,7 +258,7 @@ nav {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   grid-gap: 30px;
-  padding: 20px 0;
+  padding: 1rem auto;
   margin-top: 30px;
   background: #fbfcff;
 }
@@ -286,18 +288,14 @@ nav {
 /* footer */
 
 .container {
-  max-width: auto;
-  margin: auto;
+  padding: 1rem auto;
   background-color: blue;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.footer {
-  padding-top: 20px;
+footer .container .row{
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  padding: 2rem 1rem 0 1rem;
 }
 
 .footer-content {
@@ -310,7 +308,7 @@ nav {
   color: #000000;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 30px;
+  margin: 1rem 10px 30px 10px;
 }
 
 .footer-content .button {
@@ -332,21 +330,11 @@ nav {
   background-color: #ff0000;
 }
 
-footer .container .row{
-  display: grid;
-  grid-template-rows: repeat(5, auto);
-}
-
 .footer-col #Title {
   font-size: 1.5rem;
   font-weight: 700;
   color: #ff0000;
 }
-
-/* .footer-col {
-  width: 20%;
-  padding: 0 15px;
-} */
 
 .footer-col h4 {
   font-size: 1.2rem;
@@ -355,34 +343,19 @@ footer .container .row{
   font-weight: 500;
 }
 
-/* .footer-col h4::before {
-  content: '';
-  background-color: #ffffff;
-  height: 2px;
-  box-sizing: border-box;
-  width: 50px;
-} */
-
-/* .footer-col ul li:not(:last-child) {
-  margin-bottom: 10px;
-} */
-
 .footer-col ul li a {
   color: #ffffff;
   font-size: 1rem;
   font-weight: 400;
   color: #bbbbbb;
-  /* display: block; */
 }
 
 .footer-col ul li a:hover {
   color: #ffffff;
-  /* padding-left: 9px; */
 }
 
 .footer-bottom {
   background: #000000;
-  /* width: 100vw; */
   padding: 20px 0;
   text-align: center;
 }
