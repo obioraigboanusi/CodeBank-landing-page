@@ -8,6 +8,7 @@
   <title>CodeBank | Home of usefull code snippets</title>
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/hamburger.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
@@ -51,11 +52,10 @@
         </button>
       </div>
     </nav>
+
     <div class="hero">
       <div class="hero-inner">
-        <h1>A place for the most
-          usefull code snipets
-          you need in your project.</h1>
+        <h1>A place for the most useful code snipets you need in your project.</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua.</p>
         <button class="btn1"> Get Started</button>
@@ -63,6 +63,15 @@
       </div>
     </div>
   </header>
+  
+  <section class="tech-stacks">
+    <img class="angular-logo" src="assets/Angular_full_color_logo.png" alt="" height="100">
+    <img class="css-logo" src="assets/CSS3_logo_and_wordmark.png" alt="" width="53" height="80">
+    <img class="html-logo" src="assets/HTML5_Logo_512.png" alt="" height="80">
+    <img class="js-logo" src="assets/JavaScript-logo.png" alt="" height="80">
+    <img class="sass-logo" src="assets/sass.png" alt="" width="100" height="80">
+  </section>
+
   <section class='helping-hands'>
     <div class="wrapper">
       <div class="content">
@@ -78,50 +87,35 @@
           Ultrices gravida dictum fusce ut placerat orci.Nisi quis eleifend quam adipiscing
           vitae proin sagittis nisl.
         </p>
-        <div>
+
+        <div class="helping-hands-btn">
           <button class="button button1">Learn More</button>
-        <button class="button button2">View on GitHub</button>
+          <button class="button button2">View on GitHub</button>
         </div>
       </div>
+
       <img class="picture1" src="./assets/cubejs-schema 1.png" alt="">
-  </section>
-  </div>
-
-  <section>
-    <div class="wrapper">
-      <div class="LeftBox" ;>
-        <h3>Lorem Ipsum</h3>
-
-        <p class="loremP">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed.</p>
-        <button class="btn" id="btn1">Install</button>
-      </div>
-      <div class="rightBox" ;>
-        <h3>Lorem Ipsum</h3>
-
-        <p class="loremP">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed.</p>
-        <button class="btn" id="btn2">Sign Up</button>
-      </div>
     </div>
+  </section>
 
+  <section class="lorem-ipsum">
     <div class="wrapper">
-      <div class="LeftBox" ;>
-        <h3>Lorem Ipsum</h3>
-
+      <div class="LeftBox">
+        <h2>Lorem Ipsum</h2>
         <p class="loremP">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
           labore et dolore magna aliqua. Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed.</p>
-        <button class="btn" id="btn1">Install</button>
+        <button class="btn btn1">Install</button>
       </div>
-      <div class="rightBox" ;>
-        <h3>Lorem Ipsum</h3>
 
+      <div class="rightBox">
+        <h2>Lorem Ipsum</h2>
         <p class="loremP">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
           labore et dolore magna aliqua. Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed.</p>
-        <button class="btn" id="btn2">Sign Up</button>
+        <button class="btn btn2">Sign Up</button>
       </div>
     </div>
   </section>
+
   <!-- ---------Four card section--------------------------- -->
   <section class="four-card-section">
     <div class="card">
@@ -174,22 +168,20 @@
 
   <footer class="footer">
     <div class="footer-content">
+      <h2> Help us grow this project. Partner with us today.</h2>
+
       <div class="button">
-        <h3> Help us grow this project. Partner with us today.</h3>
         <button class="btn-btn1">Become a Contributor</button>
         <button class="btn-btn2">Donate</button>
       </div>
     </div>
+
     <div class="container">
       <div class="row">
         <div class="footer-col">
-          <h4 id="Title">CodeBank</h4>
-          <ul>
-            <li>
-              <a href="#"></a>
-            </li>
-          </ul>
+          <a id="Title" href="index.html">CodeBank</a>
         </div>
+
         <div class="footer-col">
           <h4>Title</h4>
           <ul>
@@ -199,6 +191,7 @@
             <li><a href="#">Lorem ipsum</a></li>
           </ul>
         </div>
+
         <div class="footer-col">
           <h4>Title</h4>
           <ul>
@@ -208,6 +201,7 @@
             <li><a href="#">Lorem ipsum</a></li>
           </ul>
         </div>
+
         <div class="footer-col">
           <h4>Title</h4>
           <ul>
@@ -217,6 +211,7 @@
             <li><a href="#">Lorem ipsum</a></li>
           </ul>
         </div>
+
         <div class="footer-col">
           <h4>Title</h4>
           <ul>
@@ -228,10 +223,12 @@
         </div>
       </div>
     </div>
+
     <div class="footer-bottom">
       <p>Copyright &copy;2021 Landing Page</p>
     </div>
   </footer>
+  
   <script src="./scripts/app.js"></script>
 </body>
 
