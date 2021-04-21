@@ -56,6 +56,10 @@
     grid-template-rows: 1fr;
     padding: 2rem 1rem;
   }
+
+  .foot-grid-one{
+    grid-column: 1/2;
+  }
 }
 
 @media screen and (min-width: 920px) {
