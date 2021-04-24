@@ -3,61 +3,51 @@
   .hero-inner {
     width: 55%;
   }
-  
   /* Tech stacks section */
-  .tech-stacks{
+  .tech-stacks {
     grid-template-columns: repeat(5, auto);
-    grid-template-rows: 1fr;
+    /* grid-template-rows: 1fr; */
   }
-
   /* Helping hands */
-  .helping-hands .wrapper{
+  .helping-hands .wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
   }
-
-  .picture1{
+  .picture1 {
     display: block;
   }
-
   /* Section below developer helping hand section*/
-  .lorem-ipsum .wrapper{
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-gap: 20px;
-  }
 
+  .lorem-ipsum {
+    grid-template-columns: 1fr 1fr;
+  }
   /* Four card section */
   .four-card-section {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 20px;
-    padding: 20px 40px;
+    /* grid-template-rows: repeat(2, 1fr); */
+    /* grid-gap: 20px; */
+    /* padding: 20px 40px; */
   }
   .card {
     grid-gap: 20px;
     padding: 40px 20px;
     background: #ffffff;
   }
-
   /* Footer section */
-  .button button{
+  .button button {
     width: 35%;
   }
-
   .btn-btn1 {
     margin-bottom: 0;
     margin-right: 20px;
   }
-
-  footer .container .row{
+  footer .container .row {
     grid-template-columns: repeat(5, auto);
-    grid-template-rows: 1fr;
+    /* grid-template-rows: 1fr; */
     padding: 2rem 1rem;
   }
-
-  .foot-grid-one{
+  .foot-grid-one {
     grid-column: 1/2;
   }
 }
@@ -80,22 +70,20 @@
     position: relative;
     top: auto;
     grid-template-columns: repeat(5, auto);
-    grid-template-rows: 1fr;
+    /* grid-template-rows: 1fr; */
     align-items: center;
     justify-content: end;
     grid-gap: 20px;
   }
-
   /* Four card section */
   .card {
     grid-template-columns: repeat(2, auto);
-    grid-template-rows: auto;
+    /* grid-template-rows: auto; */
     grid-gap: 30px;
     padding: 40px 20px;
   }
-
   .card h3 {
-      font-size: 1.4rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -103,26 +91,21 @@
   .hero {
     padding: 50px 5%;
   }
-
   .hero-inner {
     width: 56%;
   }
-
-  section{
-    padding-left: 5%;
-    padding-right: 5%;
+  section {
+    /* padding-left: 5%;
+    padding-right: 5%; */
   }
-
-  .tech-stacks{
+  .tech-stacks {
     margin: 3rem auto;
   }
-
-  .LeftBox,
-  .rightBox {
-    padding: 3rem 1rem;
+  .LeftBox, .rightBox {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
-
-  .button button{
+  .button button {
     width: 25%;
   }
 }
@@ -131,40 +114,32 @@
   nav {
     padding: 15px 8% 15px 8%;
   }
-
   .hero-inner {
     width: 57%;
     padding-left: 5%;
     padding-right: 5%;
   }
-
   .hero-inner button {
     width: 30%;
   }
-  
   .hero h1 {
     width: 80%;
   }
-  
   .hero p {
     margin-bottom: 1rem;
   }
-
-  section{
-    padding-left: 8%;
-    padding-right: 8%;
+  section {
+    /* padding-left: 8%;
+    padding-right: 8%; */
   }
-
-  .LeftBox,
-  .rightBox {
-    padding: 4rem 3rem;
+  .LeftBox, .rightBox {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
-
   .four-card-section {
     grid-gap: 50px;
     padding: 40px 8%;
   }
-
   .card {
     padding: 60px 50px;
   }
