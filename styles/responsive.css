@@ -94,10 +94,10 @@
   .hero-inner {
     width: 56%;
   }
-  section {
+  /* section { */
     /* padding-left: 5%;
     padding-right: 5%; */
-  }
+  /* } */
   .tech-stacks {
     margin: 3rem auto;
   }
@@ -128,10 +128,10 @@
   .hero p {
     margin-bottom: 1rem;
   }
-  section {
+  /* section { */
     /* padding-left: 8%;
     padding-right: 8%; */
-  }
+  /* } */
   .LeftBox, .rightBox {
     padding-top: 4rem;
     padding-bottom: 4rem;
