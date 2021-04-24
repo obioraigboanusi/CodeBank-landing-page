@@ -1,8 +1,8 @@
 @media screen and (min-width: 768px) {
   /* Hero section */
-  .hero-inner {
+  /* .hero-inner {
     width: 55%;
-  }
+  } */
   /* Tech stacks section */
   .tech-stacks {
     grid-template-columns: repeat(5, auto);
@@ -23,7 +23,7 @@
     grid-template-columns: 1fr 1fr;
   }
   /* Four card section */
-  .four-card-section {
+  .four-card-section .inner-wrapper{
     grid-template-columns: repeat(2, 1fr);
     /* grid-template-rows: repeat(2, 1fr); */
     /* grid-gap: 20px; */
@@ -91,9 +91,9 @@
   .hero {
     padding: 50px 5%;
   }
-  .hero-inner {
+  /* .hero-inner {
     width: 56%;
-  }
+  } */
   /* section { */
     /* padding-left: 5%;
     padding-right: 5%; */
@@ -114,11 +114,11 @@
   nav {
     padding: 15px 8% 15px 8%;
   }
-  .hero-inner {
+  /* .hero-inner {
     width: 57%;
     padding-left: 5%;
     padding-right: 5%;
-  }
+  } */
   .hero-inner button {
     width: 30%;
   }
@@ -136,10 +136,10 @@
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
-  .four-card-section {
+  /* .four-card-section {
     grid-gap: 50px;
     padding: 40px 8%;
-  }
+  } */
   .card {
     padding: 60px 50px;
   }

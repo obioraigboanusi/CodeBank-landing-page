@@ -107,40 +107,51 @@ nav {
 }
 
 /* Tech stacks section */
-.tech-stacks{
+.tech-stacks .inner-wrapper{
   display: grid;
   grid-template-columns: repeat(3, auto);
-  /* grid-template-rows: repeat(2, 1fr); */
   place-items: center;
-  margin: 1rem;
+  justify-content: space-between;
+  grid-row-gap: 1rem;
+
 }
 
 /* hero-section */
 
 .hero {
-  padding: 50px 1rem;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
-.hero-inner {
+/* .hero-inner {
   width: 100%;
+} */
+
+.hero-inner{
+  width: 90%;
+  margin: auto;
+}
+.inner-wrapper{
+  padding: 50px 5%;
 }
 
 .hero-inner button {
   display: inline-block;
-  width: 45%;
-  padding: 1rem 0;
-  font-size: 1rem;
+  /* width: 45%; */
+  /* max-width: 200px; */
+  padding: 1rem 2rem;
+  /* font-size: 1rem; */
   font-weight: 700;
 }
 
 .hero h1 {
   font-weight: 900;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   margin-bottom: 1rem;
 }
 
 .hero p {
-  font-size: 1rem;
+  /* font-size: 1rem; */
   margin-bottom: 1rem;
 }
 
@@ -204,28 +215,20 @@ nav {
 }
 
 /* Section below developer helping hand section*/
-.lorem-ipsum{
-  display: grid;
-  /* grid-template-rows: repeat(2, 1fr); */
-  /* grid-gap: 20px; */
-  /* place-items: center; */
-  /* margin: 1rem 0; */
-}
-
-.LeftBox {
+.LeftBox, .rightBox{
   text-align: center;
-  padding: 3rem 0.6rem;
+  padding: 50px 5vw;
+}
+.lorem-ipsum .LeftBox {
   background: #e6eefe;
 }
 
-.rightBox {
-  text-align: center;
-  padding: 3rem 0.6rem;
+.lorem-ipsum .rightBox {
   background: #fff7f7;
 }
 
-.lorem-ipsum h2 {
-  font-size: 1.5rem;
+.lorem-ipsum h3 {
+  font-size: 2rem;
   font-weight: 700;
   text-align: center;
 }
@@ -254,21 +257,15 @@ nav {
 
 /* Styles for the four card section */
 
-.four-card-section {
-  display: grid;
-  /* grid-template-rows: repeat(4, 1fr); */
-  /* grid-gap: 30px; */
-  padding: 1rem auto;
-  /* margin-top: 30px; */
+.four-card-section ,.inner-wrapper{
   background: #fbfcff;
 }
 
 .card {
-  display: grid;
-  /* grid-template-rows: repeat(2, auto); */
-  grid-gap: 10px;
-  padding: 20px;
+  margin-bottom:1rem;
+  padding: 1.5rem;
   background: #ffffff;
+  border-radius: 10px;
 }
 
 .card h3 {
@@ -304,17 +301,15 @@ footer .container .row{
   grid-column: 1/3;
 }
 
-.footer-content {
-  padding: 1rem 0;
+.call-to-action .footer-content{
   background: #fff7f7;
 }
 
 .footer-content h2 {
-  font-size: 1.5rem;
-  color: #000000;
+  font-size: 2rem;
   font-weight: 700;
   text-align: center;
-  margin: 1rem 10px 30px 10px;
+  margin-bottom: 1rem;
 }
 
 .footer-content .button {
@@ -323,6 +318,7 @@ footer .container .row{
 
 .button button{
   width: 80%;
+  /* margin: auto; */
   font-size: 1rem;
   color: #fff;
 }
@@ -337,7 +333,8 @@ footer .container .row{
 }
 
 .footer-col #Title {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
   font-weight: 700;
   color: #ff0000;
 }
